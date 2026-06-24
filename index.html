@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breach Brief — Real attacks, decoded for owners</title>
+<meta name="description" content="Breach Brief breaks down one real cyberattack on a small business each week — what happened, what it cost, and the one free fix that would have stopped it.">
+<style>
+  :root{
+    --bg:#0a1326; --bg2:#05101f; --panel:#0e1a31; --line:#17273f;
+    --cyan:#35c6f4; --cyan2:#7ee0ff; --ink:#eef4fb; --mute:#8b98a9;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 700px at 50% -10%, #102036 0%, transparent 60%),
+               linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+    background-color:var(--bg);
+    color:var(--ink);
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; min-height:100vh;
+  }
+  .grid{position:fixed;inset:0;z-index:0;opacity:.5;pointer-events:none;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                     linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:42px 42px;mask-image:radial-gradient(900px 600px at 50% 0%,#000 30%,transparent 75%)}
+  .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 24px 80px}
+  .mark{font-family:"Consolas","SF Mono",Menlo,"DejaVu Sans Mono",monospace;
+    font-size:30px;font-weight:700;letter-spacing:1px}
+  .mark .p{color:var(--cyan)} .mark .cur{color:var(--cyan2);animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  h1{font-size:44px;line-height:1.1;margin:28px 0 10px;letter-spacing:-.5px}
+  .tag{font-family:"Consolas",monospace;color:var(--cyan);font-size:15px;margin:0 0 28px}
+  p.lead{color:var(--ink);font-size:18px}
+  p,li{color:#cdd8e6}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:22px 0}
+  a{color:var(--cyan2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .links a{display:inline-block;border:1px solid var(--line);background:#0b1828;border-radius:999px;
+    padding:8px 14px;color:var(--ink);font-size:14px}
+  .links a:hover{border-color:var(--cyan)}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;color:var(--mute);font-size:13px}
+  footer a{color:var(--mute)}
+  .signoff{font-family:"Consolas",monospace;color:var(--cyan);margin-top:30px}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="wrap">
+  <div class="mark"><span class="p">&gt;</span> BB <span class="cur">▮</span></div>
+  <h1>Breach Brief</h1>
+  <p class="tag">// real attacks, decoded for owners</p>
+
+  <p class="lead">One real cyberattack on a small business, every week — what happened,
+  what it actually cost, and the single free habit that would have stopped it.</p>
+
+  <div class="card">
+    <p style="margin:0">Plain-English cybersecurity for non-technical owners of clinics, shops,
+    trades, and agencies: ransomware, business email compromise and wire fraud, data breaches,
+    insider threats — and the do-it-this-weekend fixes that defeat them. No jargon, no
+    fear-mongering. Real cited cases, real numbers.</p>
+  </div>
+
+  <h3 style="margin-bottom:6px">Follow</h3>
+  <div class="links">
+    <a href="https://www.youtube.com/channel/UCGhGFYUdzYXFUFQQPNUUO-Q">YouTube</a>
+    <!-- Fill these in as the accounts are created (keep the @breachbrief handle): -->
+    <a href="#">TikTok</a>
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">LinkedIn</a>
+  </div>
+
+  <p class="signoff">That's your Breach Brief.</p>
+
+  <footer>
+    <p>Breach Brief is an independent educational content brand. General education, not legal or
+    financial advice.</p>
+    <p><a href="./privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+       <a href="./terms.html">Terms of Service</a> &nbsp;·&nbsp;
+       <a href="mailto:blakegnipper@gmail.com">Contact</a></p>
+  </footer>
+</div>
+</body>
+</html>
